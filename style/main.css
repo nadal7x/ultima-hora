@@ -1,0 +1,255 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    display:flex; 
+    flex-flow: column wrap;    
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-flow: column wrap; 
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    margin-top: auto; 
+    width: 100%;
+    background-color: hsl(195, 4%, 20%);
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-around;
+}
+
+header svg{
+    height: 3em;
+}
+header svg path{
+    fill: hsl(0, 0%, 100%);
+}
+
+/*/// TYPOGRAPHY ///*/
+
+h1, h2, h3, h4, a, p, button, li, input{
+    font-family: 'Roboto';
+    color: hsl(210, 11%, 15%);
+}
+button{
+    font-size: 0.85em;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+
+/*/// HEADER ///*/
+
+header .header-main{
+    background-color: hsl(0, 100%, 40%);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    padding: 1.5em 20%;
+    z-index: 1000;
+    position: relative;
+}
+.header-main .header__buttons{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-around;
+}
+.header-main .header__button button{
+    padding: 0.2rem 0.5rem;
+    margin: 0.5em;
+    border: 1px solid transparent;
+    border-radius: 0.25em;
+    vertical-align: middle;
+}
+
+.header-main .login-button span{
+    margin-right: 0.4em;
+    vertical-align: middle;
+}
+.header-main .login-button svg{
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: middle;
+}
+.header-main .login-button svg path{
+    fill:hsl(210, 11%, 15%);
+}
+.header-main .register-button button{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    background-color: hsl(47, 100%, 50%);
+    font-size: 1rem;
+}
+header .header__top-bar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 90%);
+    font-size: 0.7rem;
+    padding: 0 20%;
+}
+header .header__top-bar ul li{
+    display: inline-block;
+    padding: 0.2em;
+}
+header .header__top-bar li.today-news__title{
+    color: hsl(0, 100%, 40%);
+    font-weight: 600;
+}
+header .navbar{
+    background-color: hsl(0, 0%, 90%);
+    padding: 0 20%;
+}
+header .navbar ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0.4em;
+}
+header .navbar ul li{
+    vertical-align: text-bottom;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+header .navbar svg{
+    height: 1em;
+    vertical-align: middle;
+}
+header .navbar svg.home{
+    height: 1.5em;
+}
+header .navbar svg path{
+    fill:hsl(210, 11%, 15%);
+}
+header .menu-burger{
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    width: 40%;
+    background-color: hsl(0, 0%, 14%);
+    border-bottom: 2px solid hsl(0, 100%, 40%);
+    /* display: none; */
+}
+.menu-burger .menu-burger__search input{
+    background-color: hsl(0, 0%, 20%);
+    width: 100%;
+    padding: 0.5em 4em;
+    border: none;
+    line-height: 1.5em;
+    position: relative;
+    color: hsl(0, 0%, 100%);
+}
+.menu-burger .menu-burger__search svg{
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    top: 0.5em;
+    left: 2em;
+}
+header .menu-burger ul{
+    margin: 0;
+}
+header .menu-burger ul li a{
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    display: inline-block;
+    border-bottom: solid 1px hsl(0, 0%, 40%);
+    padding: 0.5em 2em;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+}
+header .menu-burger ul li a span{
+    color: hsl(0, 100%, 40%);
+}
+.menu-burger p{
+    color: hsl(0, 0%, 80%);
+    font-size: 0.8em;
+}
+.menu-burger .social-networks-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    margin-right: 1em;
+}
+.menu-burger .menu-burger_social-networks{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    padding: 0.5em 2em;
+}
+.menu-burger_social-networks svg{
+    width: 1em;
+    height: 1em;
+}
+.menu-burger_social-networks svg path{
+    fill: hsl(0, 0%, 80%);
+}
+.social-networks__element{
+    border-radius: 50%;
+    padding: 0.2em;
+    border: 2px solid hsl(0, 0%, 80%);
+    width: 1em;
+    height: 1em;
+    margin: 0 0.3em;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+}
+.menu-burger__contact{
+    padding: 0.5em 2em;
+}
+.menu-burger__contact a{
+    color: hsl(0, 0%, 80%);
+}
+.menu-burger__contact span{
+    color: hsl(0, 100%, 40%);
+}
+
+/*/// ADS ///*/
+.permament-ad{
+    width: 9%;
+}
+ .horizontal-ad{
+    width: 100%;
+ }
+ .side-ad{
+     width: 29%;
+ }
+ .horizontal-ad img, .side-ad img, .permanent-ad img{
+    width: 100%;
+ }
+/*/// MAIN ///*/
+
+.main-content{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.main-content .main-new{
+    width: 69%;
+}
+
