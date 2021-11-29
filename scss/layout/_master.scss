@@ -1,0 +1,23 @@
+body{
+    background-color: $white;
+    display:flex; 
+    flex-flow: column wrap;    
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1200;
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}

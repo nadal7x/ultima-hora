@@ -1,0 +1,31 @@
+.navbar{
+    background-color: $white-darker;
+    padding: 0 20%;
+    position: relative;
+    z-index: 1200;
+
+    ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0.4em;
+
+        li{
+            vertical-align: text-bottom;
+            font-weight: 700;
+            line-height: 1.5em;
+        }
+    }
+    svg{
+        height: 1em;
+        vertical-align: middle;
+        path{
+            fill:hsl(210, 11%, 15%);
+        }
+
+        &.home{
+            height: 1.5em;
+        }
+    }
+
+}
