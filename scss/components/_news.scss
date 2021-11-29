@@ -38,7 +38,7 @@
     }
     .new-container.featured-new,.new-container.featured-new-alt{
         background-color:$color-primary;
-        h3,p{
+        h3, h4, p{
             color: $white;
         }
         .new-text{
@@ -53,9 +53,15 @@
     }
     .new-container.branded-content{
         background-color:hsl(199, 100%, 94%);
+        .new-text{
+            padding: 0.5em;
+        }
     }
     .new-container.special-content{
         background-color:$white-darker;
+        .new-text{
+            padding: 0.5em;
+        }
     }
 }
 
