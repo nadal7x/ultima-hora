@@ -1,23 +1,14 @@
         const burger = document.querySelector(".menu-burger-icon");
         const burgermenu = document.querySelector(".menu-burger");
         const fondo = document.querySelector("main");
-        var abierto = false;
 
-        burger.onclick = function(){
-            if(abierto == false){
-                burgermenu.classList.add("open");
-                fondo.classList.add("open");
-                abierto = true;
-            }
-            else{
-                burgermenu.classList.remove("open");
-                fondo.classList.remove("open");
-                abierto = false;
-            }
-        };
+        burger.addEventListener("click", () => {
+            burgermenu.classList.toggle("open");
+            fondo.classList.toggle("open");
+        });
 
         const menu = document.querySelector(".header-main");
-        window.onscroll = function() {
+        window.addEventListener("scroll", () => {
             if(window.scrollY>20){
                 menu.classList.add("scrolled");
                 burgermenu.classList.add("scrolled");
@@ -26,14 +17,14 @@
                 menu.classList.remove("scrolled");
                 burgermenu.classList.remove("scrolled");
             }
-        };
+        });
 
         //// BURGER ////
 
         (function() {
         var burger3;
         burger3 = document.querySelector(".burger3");
-        burger3.addEventListener("click", function() {
+        burger3.addEventListener("click", () => {
             return burger3.classList.toggle("on");
         });
         }).call(this);

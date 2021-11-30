@@ -2,6 +2,7 @@
     background-color: $color-primary;
     position: sticky;
     top: 0;
+    height: 8vh;
     display: flex;
     flex-flow: row wrap; 
     padding: 1em 20%;
@@ -63,6 +64,7 @@
 }
 
 .header__top-bar{
+    height: 2vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
