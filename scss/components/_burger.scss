@@ -141,7 +141,7 @@ button.burger {
       	outline: none;
     }
     &.burger3{
-      	&:after, &:before, & span {
+      	&:after, &:before, span {
 			width: 100%;
 			height: 4px;
 			border-radius: 100px;
